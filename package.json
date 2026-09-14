@@ -1,0 +1,33 @@
+{
+  "name": "routineflow",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "next": "16.1.0",
+    "react": "19.1.0",
+    "react-dom": "19.1.0",
+    "recharts": "2.15.0",
+    "lucide-react": "0.468.0",
+    "class-variance-authority": "0.7.1",
+    "clsx": "2.1.1",
+    "tailwind-merge": "2.6.0",
+    "sonner": "1.7.1",
+    "jspdf": "2.5.2",
+    "jspdf-autotable": "3.8.4",
+    "xlsx": "0.18.5"
+  },
+  "devDependencies": {
+    "@types/node": "22.10.2",
+    "@types/react": "19.1.2",
+    "@types/react-dom": "19.1.2",
+    "@tailwindcss/postcss": "4.0.0",
+    "tailwindcss": "4.0.0",
+    "typescript": "5.7.2"
+  }
+}
