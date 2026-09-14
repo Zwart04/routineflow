@@ -1,18 +1,19 @@
-import type { Metadata } from 'next';
-import { AppProvider } from '@/lib/app-context';
-import './globals.css';
+import type { Metadata } from 'next'
+import './globals.css'
+import { AppWrapper } from '@/components/AppWrapper'
 
 export const metadata: Metadata = {
-  title: 'RoutineFlow — AI Daily Routine Orchestrator',
-  description: 'AI-powered daily routine orchestrator with smart scheduling, real-time collaboration, and calendar sync.',
-};
+  title: 'RoutineFlow — AI-Powered Daily Routine Orchestrator',
+  description: 'Build better habits with AI-powered scheduling, real-time tracking, and calendar sync.',
+  icons: { icon: '/icon.svg' },
+}
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en">
+    <html lang="en" suppressHydrationWarning>
       <body>
-        <AppProvider>{children}</AppProvider>
+        <AppWrapper>{children}</AppWrapper>
       </body>
     </html>
-  );
+  )
 }
